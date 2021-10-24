@@ -18,46 +18,50 @@
 <body>
     <!-- header -->
     <header>
-        <section class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="/images/logo.png" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#shoes">Shoes</a>
-                        <a class="nav-link" href="#backpack">Backpack</a>
-                        <a class="nav-link" href="#subscribe">Subscribe</a>
+        <!-- navigation bar  -->
+        <div class="d-flex justify-content-center bg-warning">
+            <section style="position: fixed; z-index: 10; top: 0;" class="container ">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="/images/logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-              </nav>
-        </section>
+                  </nav>
+            </section>
+        </div>
+        <!-- carousel  -->
         <section class="container carousel my-5 rounded" style="background-color: #F7EAE9;">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <div class="d-flex align-items-center">
-                        <div>
-                            <h4>Cool Dude Headphone</h4>
+                      <div class="d-flex flex-column flex-md-row align-items-center align-items-end p-2">
+                        <div class="ps-md-5">
+                            <h4 class="fw-bold">Cool Dude Headphone</h4>
                             <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
                             <h2>$420</h2>
                             <button class="btn">Buy Now</button>
                           </div>
                           <div>
-                            <img src="/images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                            <img src="/images/banner-images/headphone.png" class="d-block w-100 p-5" alt="...">
                           </div>
                       </div>
                   </div>
                   <div class="carousel-item">
-                      <div class="d-flex align-items-center">
-                          <div>
-                              <h4>
+                      <div class="d-flex flex-column flex-md-row align-items-center p-2">
+                          <div class="ps-md-5 ">
+                              <h4 class="fw-bold">
                                 X-Box For Your Living Room
                               </h4>
                               <p>
@@ -66,15 +70,15 @@
                               <h2>$650</h2>
                               <button class="btn">Buy Now</button>
                           </div>
-                          <div>
+                          <div class="">
                             <img src="/images/banner-images/xbox.png" class="d-block w-100" alt="...">
                           </div>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="d-flex align-items-center">
-                        <div>
-                            <h4>Mega LCD TV For Sports</h4>
+                    <div class="d-flex flex-column flex-md-row align-items-center p-2">
+                        <div class="ps-md-5">
+                            <h4 class="fw-bold">Mega LCD TV For Sports</h4>
                             <p>
                               This is the best tv in the world for people who just want to waste time in front of tv.
                             </p>
@@ -82,7 +86,7 @@
                             <button class="btn">Bye Now</button>
                         </div>
                         <div>
-                            <img src="/images/banner-images/tv.png" class="d-block w-100" alt="...">
+                            <img src="/images/banner-images/tv.png" class="d-block w-100 p-5" alt="...">
                         </div>
                     </div>
                   </div>
@@ -97,6 +101,7 @@
                 </button>
               </div>
         </section>
+        <!-- Three items  -->
         <section class="container threeItems mt-5 mb-5">
             <div class="row gx-4 d-flex">
                 <div class="col-md-4 my-2">
@@ -130,9 +135,10 @@
                 </div>
             </div>
         </section>
+        <!-- Shoes items -->
         <section class="container mb-5" id="shoes">
-            <h3>Shoes</h3>
-            <div class="row">
+            <h3 class="h2 fw-bold">Shoes</h3>
+            <div class="row gy-4">
                 <div class="col-sm-4">
                     <div class="card">
                         <img src="/images/shoes/shoe-1.png" class="card-img-top" alt="...">
@@ -165,9 +171,10 @@
                 </div>
             </div>
         </section>
+        <!-- bag section  -->
         <section class="container mb-5" id="backpack">
-            <h3>Backpack</h3>
-            <div class="row">
+            <h3 class="h2 fw-bold">Backpack</h3>
+            <div class="row gy-4">
                 <div class="col-sm-4">
                     <div class="card">
                         <img src="/images/bags/bag-1.png" class="card-img-top" alt="...">
@@ -205,10 +212,12 @@
 
     <footer class="container" id="subscribe">
         <div class="info">
-            <h2 class="text-uppercase">lets stay in touch</h2>
+            <h2 class="text-uppercase text-center md:text-sm-start">lets stay in touch</h2>
             <p>Get updates on sales, specials and more</p>
-            <input type="text" class="input">
-            <input type="submit" class="submit btn">
+            <input type="text" class="input form-control">
+            <div class="d-grid justify-content-center">
+                <input type="submit" class="submit btn bg-primary btn-lg bg-lg-secondary">
+            </div>
         </div>
     </footer>
 
